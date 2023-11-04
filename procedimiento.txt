@@ -1,0 +1,29 @@
+BEGIN
+
+DECLARE futbolistasActivos int;
+DECLARE proximaConvocatoria date;
+DECLARE cantconvocatoria int;
+DECLARE cantFutbolista int;
+DECLARE totalConvocatoria int;
+DECLARE futbolistaInactivo int;
+
+select count(*) into futbolistasActivos
+from futbolista  
+where activo = 1;
+
+select count(*) into cantConvocatoria
+from convocatoria WHERE fecha > now();
+
+select count(*) into totalConvocatoria
+from convocatoria  WHERE fecha < now();
+
+SELECT fecha INTO proximaConvocatoria FROM convocatoria WHERE fecha > now()LIMIT 1;
+
+select count(*) into cantFutbolista from futbolista;
+
+select count(*) into futbolistaInactivo from futbolista where activo = 0;
+
+SELECT futbolistasActivos,proximaConvocatoria,cantConvocatoria,totalConvocatoria,cantFutbolista,futbolistaInactivo ;
+
+
+END

@@ -1,0 +1,14 @@
+div.main-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.contenido {
+    padding: 2rem;
+    width: 100%;
+    min-height: 800px;
+    background-color: white;
+}

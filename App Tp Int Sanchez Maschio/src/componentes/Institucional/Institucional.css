@@ -1,0 +1,87 @@
+
+/* BANNER */
+#banner{
+    width: 100%;
+    height: 340px;
+}
+
+.inst {
+    background-color: white;
+    margin: 0;
+}
+
+.wrapper {
+    background-color: white;
+}
+
+
+/* MAIN */
+
+main #textoPrincipal{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+
+/* LISTA DE CLUBES */
+
+.wrapper{
+    padding-right: 5%;
+    padding-left: 10%;
+    background-color: #0380ad;
+}
+
+.wrapper ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 0 !important;
+   
+}
+
+.wrapper ul li{
+    list-style-type: none;
+
+}
+
+.wrapper ul li a img{
+    width: 49px;
+}
+
+.wrapper ul li a img:hover{
+    transform: scale(1.5);
+    transition: transform .2s
+}
+
+#tituloClubes{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    #banner{
+        display: none;
+    }
+
+    .main{
+        margin-top: 10px;
+    }
+
+    .titleImp{
+        padding: 100px 0 0;
+    }
+
+
+
+}
+
